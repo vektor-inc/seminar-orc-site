@@ -9,6 +9,9 @@
 	--color-border: #ddd;
 	--color-bg: #fff;
 	--color-bg-gray: #f4f6f9;
+	--color-on-primary: #fff;
+	--color-footer-bg: #222;
+	--color-footer-text: #ccc;
 	--header-height: 64px;
 }
 
@@ -30,6 +33,14 @@ body {
 	line-height: 1.8;
 	color: var(--color-text);
 	background: var(--color-bg);
+	line-break: strict;
+	word-break: auto-phrase;
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1.4;
 }
 
 a {
@@ -69,6 +80,7 @@ a {
 	font-size: 1.25rem;
 	font-weight: 700;
 	color: var(--color-primary);
+	line-height: 1.4;
 	text-decoration: none;
 	white-space: nowrap;
 }
@@ -85,6 +97,7 @@ a {
 .global-nav__list a {
 	color: var(--color-text);
 	font-size: 0.9375rem;
+	line-height: 1.4;
 	text-decoration: none;
 	white-space: nowrap;
 }
@@ -98,14 +111,15 @@ a {
    ========================================================================== */
 .hero {
 	padding: 120px 0;
-	color: #fff;
+	color: var(--color-on-primary);
 	text-align: center;
-	background: linear-gradient(135deg, var(--color-primary-dark), #2f7bbf);
+	background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
 }
 
 .hero__label {
 	margin: 0 0 8px;
 	font-size: 0.875rem;
+	line-height: 1.4;
 	letter-spacing: 0.2em;
 }
 
@@ -127,17 +141,10 @@ a {
 	padding: 14px 40px;
 	border-radius: 4px;
 	font-weight: 700;
+	line-height: 1.4;
+	color: var(--color-primary);
 	text-decoration: none;
-}
-
-.btn--primary {
-	color: var(--color-primary);
-	background: #fff;
-}
-
-.btn--white {
-	color: var(--color-primary);
-	background: #fff;
+	background: var(--color-on-primary);
 }
 
 .btn:hover {
@@ -185,16 +192,9 @@ a {
 
 .card {
 	padding: 40px 32px;
-	background: #fff;
+	background: var(--color-bg);
 	border-radius: 8px;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-}
-
-.card__icon {
-	margin-bottom: 16px;
-	font-size: 2rem;
-	font-weight: 700;
-	color: var(--color-primary);
 }
 
 .card__title {
@@ -258,28 +258,30 @@ a {
    お問い合わせ
    ========================================================================== */
 .section--contact {
-	color: #fff;
+	color: var(--color-on-primary);
 	text-align: center;
 	background: var(--color-primary);
 }
 
 .section--contact .section__title::after {
-	background: #fff;
+	background: var(--color-on-primary);
 }
 
 .contact-tel {
 	margin: 32px 0;
 	font-size: 1.75rem;
 	font-weight: 700;
+	line-height: 1.4;
 }
 
 .contact-tel a {
-	color: #fff;
+	color: var(--color-on-primary);
 	text-decoration: none;
 }
 
 .contact-tel__note {
 	display: block;
+	margin-top: 4px;
 	font-size: 0.875rem;
 	font-weight: 400;
 }
@@ -289,9 +291,9 @@ a {
    ========================================================================== */
 .site-footer {
 	padding: 24px 0;
-	color: #ccc;
+	color: var(--color-footer-text);
 	text-align: center;
-	background: #222;
+	background: var(--color-footer-bg);
 }
 
 .site-footer__copy {
